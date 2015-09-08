@@ -1,0 +1,23 @@
+<editor>
+    <formElement>
+        <type>entry</type>
+        <label>URL Base:</label>
+        <property>baseUrl</property>
+        <required>1</required>
+        <documentation>URL Base</documentation>
+    </formElement>
+    <formElement>
+        <type>entry</type>
+        <label>Port:</label>
+        <property>port</property>
+        <required>0</required>
+        <documentation>Server port</documentation>
+    </formElement>
+    <formElement>
+        <type>credential</type>
+        <label>Login as:</label>
+        <property>credential</property>
+        <required>0</required>
+        <documentation>Credentials for Basic authentication (optional)</documentation>
+    </formElement>
+</editor>

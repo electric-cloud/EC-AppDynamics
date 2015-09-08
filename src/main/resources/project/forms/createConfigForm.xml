@@ -1,0 +1,50 @@
+<editor>
+    <formElement>
+        <type>entry</type>
+        <label>Configuration Name:</label>
+        <property>config</property>
+        <value></value>
+        <required>1</required>
+        <documentation>Provide a unique name for the configuration, keeping in mind that you may need to create additional configurations over time.</documentation>
+    </formElement>
+    <formElement>
+        <type>entry</type>
+        <label>Controller host URL:</label>
+        <property>controllerHostName</property>
+        <required>1</required>
+        <documentation>Provide a Controller host URL</documentation>
+    </formElement>
+    <formElement>
+        <type>entry</type>
+        <label>Port:</label>
+        <property>controllerPort</property>
+        <required>0</required>
+        <documentation>Server port</documentation>
+    </formElement>
+    
+    <formElement>
+        <type>entry</type>
+        <label>Account name</label>
+        <property>accountName</property>
+        <defaultValue>customer1</defaultValue>
+        <required>1</required>
+        <documentation>Required for a controller running in multi-tenant mode. Usually 'customer1'</documentation>
+    </formElement>
+    
+    <formElement>
+        <type>entry</type>
+        <label>Account access key</label>
+        <property>accountAccessKey</property>
+        <defaultValue></defaultValue>
+        <required>1</required>
+        <documentation>Required for a controller running in multi-tenant mode</documentation>
+    </formElement>
+    
+    <formElement>
+        <type>credential</type>
+        <label>Login as:</label>
+        <property>credential</property>
+        <required>0</required>
+        <documentation>Credentials for Basic authentication (optional)</documentation>
+    </formElement>
+</editor>

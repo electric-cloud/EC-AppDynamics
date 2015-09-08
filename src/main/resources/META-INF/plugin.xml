@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <key>@PLUGIN_KEY@</key>
+    <version>@PLUGIN_VERSION@</version>
+    <label>@PLUGIN_KEY@</label>
+    <description>AppDynamics Controller integration</description>
+    <category>APM</category>
+    <author>Electric Cloud</author>
+    <configure>configurations.xml</configure>
+    <help>EC-AppDynamics_help.xml</help>
+    <authorUrl>http://www.electric-cloud.com/support</authorUrl>
+    <commander-version min="3.6"/>
+    <components>
+        <component name="ConfigurationManagement">
+            <javascript>war/ecplugins.appdynamics.ConfigurationManagement/ecplugins.appdynamics.ConfigurationManagement.nocache.js</javascript>
+        </component>
+    </components>
+</plugin>

@@ -1,0 +1,67 @@
+<editor>
+	<help>/commander/pages/@PLUGIN_NAME@/@PLUGIN_KEY@_help?s=Administration&amp;ss=Plugins#runAppDynamics</help>
+    <formElement>
+        <label>Configuration:</label>
+        <property>connection_config</property>
+        <value/>
+        <documentation>The name of the config which holds all the connection information. This must reference a valid existing configuration.</documentation>
+        <required>1</required>
+        <type>entry</type>
+    </formElement>
+    <formElement>
+		<type>entry</type>
+		<label>Path URL:</label>
+		<property>pathUrl</property>
+		<required>0</required>
+		<documentation>URL Path</documentation>
+	</formElement>
+	<formElement>
+		<type>entry</type>
+		<label>Content Type:</label>
+		<property>contentType</property>
+		<documentation>Provide the Content-Type required for the request.</documentation>
+		<required>0</required>
+	</formElement>
+	<formElement>
+		<type>textarea</type>
+		<label>Headers:</label>
+		<property>headers</property>
+		<documentation>Provide the headers required for the request. Remember to write "Key" whitespace and then "Value", If more than one header, write each header in separate lines.</documentation>
+		<required>0</required>
+	</formElement>
+	<formElement>
+		<type>textarea</type>
+		<label>Content:</label>
+		<property>formContent</property>
+		<documentation>Provide the Content required for the request.</documentation>
+		<required>0</required>
+	</formElement>
+    <formElement>
+        <type>entry</type>
+        <label>Source file:</label>
+        <property>filePath</property>
+        <documentation>Provide the Content required for the request.</documentation>
+        <required>0</required>
+    </formElement>
+	<formElement>
+        <type>select</type>
+        <label>Request Type:</label>
+        <property>requestType</property>
+        <required>1</required>
+        <documentation>Provide the request type.</documentation>
+        <option><name>GET</name><value>GET</value></option>
+        <option><name>POST</name><value>POST</value></option>
+        <option><name>PUT</name><value>PUT</value></option>
+        <option><name>PATCH</name><value>PATCH</value></option>
+        <option><name>DELETE</name><value>DELETE</value></option>
+        <option><name>HEAD</name><value>HEAD</value></option>
+        <option><name>OPTIONS</name><value>OPTIONS</value></option>
+    </formElement>
+    <formElement>
+		<type>entry</type>
+		<label>Response (output property path):</label>
+		<property>response_outpp</property>
+		<required>0</required>
+		<documentation>Property to store the server's response.</documentation>
+	</formElement>
+</editor>
