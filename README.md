@@ -1,3 +1,3 @@
 # EC-AppDynamics
 
-Electric Flow Integration to EC-AppDynamics Controller
+Electric Flow Integration to EC-AppDynamics Controller.
